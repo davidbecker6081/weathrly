@@ -1,4 +1,4 @@
-# React Starter Kit
+# Weathrly
 
 To install the dependencies:
 
