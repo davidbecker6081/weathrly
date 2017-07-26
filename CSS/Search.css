@@ -1,0 +1,8 @@
+.search-btn {
+  background-color: blue;
+}
+
+.search-btn-disabled {
+  background-color: red;
+  pointer-events: none;
+}
