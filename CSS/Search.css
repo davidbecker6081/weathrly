@@ -2,7 +2,6 @@
   background-color: blue;
 }
 
-.search-btn-disabled {
+.search-btn:disabled {
   background-color: red;
-  pointer-events: none;
 }
