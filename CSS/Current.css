@@ -1,1 +1,55 @@
-/*font-family: 'Cabin', sans-serif;*/
+
+.current {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  border: 2px solid #FFFFFF;
+  color: #C4DBF6;
+  font-size: 18px;
+  font-family: 'Cabin', sans-serif;
+}
+
+h2 {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 60px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+div.current-temp {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+h3 {
+  margin: 30px 0 0 0;
+  font-size: 35px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.current-img {
+  height: 80px;
+  width: 80px;
+}
+
+.high-low-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 30%;
+  color: #FFFFFF;
+  font-size: 25px;
+}
+
+.low-temp {
+
+}
+
+.high-temp {
+
+}
