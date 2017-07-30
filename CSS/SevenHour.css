@@ -39,3 +39,9 @@
 p {
 
 }
+
+.sevenhour-condition {
+  display: flex;
+  justify-content: flex-start;
+  width: 25%;
+}
