@@ -16,3 +16,12 @@ h1 {
   font-weight: 700;
   letter-spacing: -1px;
 }
+
+.App-Welcome header {
+  align-items: center;
+  height: 30vh;
+}
+
+.App-Welcome h1 {
+  font-size: 150px;
+}
