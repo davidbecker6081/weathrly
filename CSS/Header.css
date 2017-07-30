@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+  background-color: rgba(54, 56, 55, 0.8);
+}
+
+h1 {
+  margin: 0;
+  color: rgb(223,108,79);
+  text-shadow: 2px 2px rgb(87,54,44);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
