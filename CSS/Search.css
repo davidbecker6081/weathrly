@@ -1,7 +1,39 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  width: 50%;
+}
+
+.input-search {
+  padding-left: 5px;
+  width: 70%;
+  background: none;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 26px;
+  outline: none;
+}
 .search-btn {
-  background-color: blue;
+  width: 30%;
+  background: none;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 26px;
 }
 
 .search-btn:disabled {
-  background-color: red;
+  color: #C4DBF6;
+  box-shadow:
+}
+
+.input-search,
+.search-btn {
+  height: 60px;
+  border-radius: 3px;
 }
