@@ -37,3 +37,9 @@
   height: 60px;
   border-radius: 3px;
 }
+
+.App-Welcome .input-search,
+.App-Welcome .search-btn {
+  height: 80px;
+  font-size: 30px;
+}
