@@ -1,0 +1,31 @@
+.sevenhour-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.sevenhour-card:nth-of-type(1),
+.sevenhour-card:nth-of-type(3),
+.sevenhour-card:nth-of-type(5),
+.sevenhour-card:nth-of-type(7) {
+  background-color: #C4DBF6;
+}
+
+.sevenhour-card:nth-of-type(2),
+.sevenhour-card:nth-of-type(4),
+.sevenhour-card:nth-of-type(6) {
+  background-color: #E7E3D4;
+}
+
+.sevenhour-time {
+
+}
+
+.sevenhour-icon {
+
+}
+
+.sevenhour-temp {
+
+}

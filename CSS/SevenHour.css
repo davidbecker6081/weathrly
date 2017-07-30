@@ -1,0 +1,41 @@
+.seven-hour {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.sevenhour-card-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Cabin', sans-serif;
+  list-style: none;
+}
+
+.seven-hour-header {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  background-color: rgba(250,250,250,0.3);
+}
+
+.seven-hour-header li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.seven-hour h3 {
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+
+}

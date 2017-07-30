@@ -1,0 +1,10 @@
+.tenday h2 {
+  font-size: 35px;
+}
+
+.tenday-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  list-style: none;
+}
