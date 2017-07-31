@@ -30,13 +30,7 @@ rgb(26,153,170) - rgb(53,93,97) - rgb(44,85,95)
   box-sizing: border-box;
 }
 
-body {
-  width: 100%;
-  background-color: #3B8BEB;
-}
-.App,
-.App-Welcome {
-  height: 100vh;
+.App {
   background: linear-gradient(rgb(32, 100, 189), rgb(55, 127, 213), rgb(89, 155, 234));
 }
 
@@ -45,9 +39,4 @@ body {
   flex-wrap: nowrap;
   padding: 15px 0;
   background-color: rgba(250,250,250,0.3);
-}
-
-.App-Welcome {
-  display: flex;
-  align-items: center;
 }

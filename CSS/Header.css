@@ -4,7 +4,7 @@ header {
   justify-content: space-between;
   padding: 15px;
   width: 100%;
-  background-color: rgba(178, 56, 80, 0.9);
+  background-color: #B23850;
 }
 
 h1 {
@@ -15,13 +15,4 @@ h1 {
   font-size: 120px;
   font-weight: 700;
   letter-spacing: -1px;
-}
-
-.App-Welcome header {
-  align-items: center;
-  height: 30vh;
-}
-
-.App-Welcome h1 {
-  font-size: 150px;
 }
