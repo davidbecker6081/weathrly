@@ -3,6 +3,11 @@
   font-family: 'Cabin', sans-serif;
 }
 
+.input-search,
+.search-btn {
+  height: 60px;
+}
+
 .search-container {
   display: flex;
   align-items: center;
@@ -15,6 +20,8 @@
   width: 70%;
   background: none;
   border: 2px solid #FFFFFF;
+  border-right: 0px;
+  border-radius: 7px 0 0 7px;
   color: #FFFFFF;
   font-size: 26px;
   outline: none;
@@ -23,19 +30,20 @@
   width: 30%;
   background: none;
   border: 2px solid #FFFFFF;
+  border-radius: 0 7px 7px 0;
   color: #FFFFFF;
   font-size: 26px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: rgba(250,250,250,0.3);
 }
 
 .search-btn:disabled {
-  color: #C4DBF6;
-  box-shadow:
-}
-
-.input-search,
-.search-btn {
-  height: 60px;
-  border-radius: 3px;
+  background: none;
+  color: rgb(206, 139, 152);
+  cursor: not-allowed;
 }
 
 .App-Welcome .input-search,
