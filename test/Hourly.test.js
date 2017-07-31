@@ -28,9 +28,11 @@ describe('Hourly', () => {
   })
 
   it('should have valid rendered text', () => {
-    expect(wrapper.text()).toEqual('11:00 AM - 66 - Clear')
+    expect(wrapper.find('.sevenhour-time').text()).toEqual('11:00 AM')
   })
 
-
+  it('should render 3 divs per card', () => {
+    expect(wrapper.find('div').length).toEqual(3)
+  })
 
 })
