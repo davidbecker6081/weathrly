@@ -13,7 +13,7 @@
 h2 {
   margin: 0;
   color: #FFFFFF;
-  font-size: 60px;
+  font-size: 70px;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -50,9 +50,13 @@ h3 {
 }
 
 .low-temp {
-
+  color: #3B8BEB;
 }
 
 .high-temp {
+  color: #B23850;
+}
 
+.weather-summary {
+  display: block;
 }
