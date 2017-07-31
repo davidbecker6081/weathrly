@@ -2,20 +2,20 @@
   list-style: none;
   margin-bottom: 12px;
   cursor: pointer;
+  font-size: 20px;
 }
 
 .suggest-span {
-  text-decoration: underline;
   /*background-color: #3B8BEB;*/
   /*border-radius: 3px;*/
   padding: 3px 5px;
+  color: rgba(255, 255, 255, 0.7);
   /*border: 1px solid royalblue;*/
 }
 
 .suggest-span:hover {
-  text-decoration: none;
   background-color: #3B8BEB;
-  border-radius: 3px;
+  border-radius: 6px;
   padding: 3px 4px;
   border: 1px solid royalblue;
 }
