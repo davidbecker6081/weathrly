@@ -37,8 +37,13 @@ describe('SevenHour', () => {
   })
 
   it('should render the correct first hourly component', () => {
-    console.log(wrapper.debug());
-    expect(wrapper.render().children('.sevenhour-card-container').children('.sevenhour-time').text()).toEqual('11:00 AM')
+    //  wrapper.find(Hourly).at(0).render().find('.sevenhour-time').text().toEqual('11:00 AM')
+     expect(wrapper.find(Hourly).at(0).render().find('.sevenhour-time').text()).toEqual('11:00 AM')
+  })
+
+  it.skip('should pass the CONTAINS check', () => {
+    console.log(wrapper.find(Hourly).at(0).containsAnyMatchingElements([<div className="sevenhour-time">11:00 AM</div>]));
+     expect(wrapper.find(Hourly).at(0).containsAnyMatchingElements([<div className="sevenhour-time">11:00 AM</div>])).toEqual(true)
   })
 
 
