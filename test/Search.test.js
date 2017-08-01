@@ -4,6 +4,7 @@ import AutoComplete from '../lib/AutoComplete'
 import { shallow, mount } from 'enzyme'
 import CityList from '../lib/CityList'
 import Trie from '../lib/Trie'
+import Suggestion from '../lib/Suggestion'
 
 describe('Search', () => {
   let wrapper
@@ -99,6 +100,11 @@ describe('Search', () => {
     expect(wrapper.state().currentInput).toEqual('')
     wrapper.update()
     expect(searchInput.props().value).toEqual('')
+  })
+
+  it('should return a suggestion list with the correct count', () => {
+    wrapper.setState({currentInput: 'Den'})
+    expect(wrapper.find('AutoComplete').find('Suggestion').length).toEqual(2)
   })
 
 })

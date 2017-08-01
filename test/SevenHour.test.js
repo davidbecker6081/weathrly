@@ -42,6 +42,8 @@ describe('SevenHour', () => {
   })
 
   it.skip('should pass the CONTAINS check', () => {
+    // We tried to use this 'contains' function but couldn't
+    // figure out how to get it working correctly
     console.log(wrapper.find(Hourly).at(0).containsAnyMatchingElements([<div className="sevenhour-time">11:00 AM</div>]));
      expect(wrapper.find(Hourly).at(0).containsAnyMatchingElements([<div className="sevenhour-time">11:00 AM</div>])).toEqual(true)
   })
