@@ -10,6 +10,8 @@ import MockDataHourly from '../lib/mock-data-hourly'
 describe('SevenHour', () => {
   let wrapper;
   let apiObj = new API('San Francisco')
+  apiObj.setSevenHourData(MockDataHourly);
+
 
   // Test to make sure that given a starting hour, the sevenHour array
   // starts at the correct hour, and ends 7 hours later
@@ -23,8 +25,6 @@ describe('SevenHour', () => {
   })
 
   it('should have a sevenHour array of 7 items', () => {
-    expect(wrapper.instance().props.apiData.sevenHour.length).toEqual(0)
-    apiObj.setSevenHourData(MockDataHourly);
     expect(wrapper.instance().props.apiData.sevenHour.length).toEqual(7)
   })
 
