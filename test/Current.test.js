@@ -5,14 +5,11 @@ import API from '../lib/API'
 import MockDataCurrent from '../lib/mock-data-current'
 import MockDataForecast from '../lib/mock-data-forecast'
 
-
-
 describe('Current', () => {
   let wrapper;
   let apiObj = new API('San Francisco')
   apiObj.setCurrentData(MockDataCurrent)
   apiObj.setCurrentHighLowData(MockDataForecast)
-
 
   beforeEach(() => {
     wrapper = shallow(<Current apiData={apiObj} />)
@@ -45,8 +42,6 @@ describe('Current', () => {
   it('should have the rendered the image', () => {
     const image = wrapper.find('.current-img');
     expect(image.exists()).toEqual(true)
-
     expect(image.props().alt).toEqual('partlycloudy')
   })
-
 })

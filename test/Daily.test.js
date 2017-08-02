@@ -47,5 +47,4 @@ describe('Daily', () => {
     expect(image.exists()).toEqual(true)
     expect(image.props().alt).toEqual('partlycloudy')
   })
-
 })

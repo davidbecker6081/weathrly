@@ -3,7 +3,6 @@ import { shallow, mount } from 'enzyme'
 import Hourly from '../lib/Hourly'
 import MockDataHourly from '../lib/mock-data-hourly'
 
-
 describe('Hourly', () => {
   let wrapper
   let oneHour
@@ -34,5 +33,4 @@ describe('Hourly', () => {
   it('should render 3 divs per card', () => {
     expect(wrapper.find('div').length).toEqual(3)
   })
-
 })

@@ -5,16 +5,10 @@ import Hourly from '../lib/Hourly'
 import API from '../lib/API'
 import MockDataHourly from '../lib/mock-data-hourly'
 
-
-
 describe('SevenHour', () => {
   let wrapper;
   let apiObj = new API('San Francisco')
   apiObj.setSevenHourData(MockDataHourly);
-
-
-  // Test to make sure that given a starting hour, the sevenHour array
-  // starts at the correct hour, and ends 7 hours later
 
   beforeEach(() => {
     wrapper = shallow(<SevenHour apiData={apiObj} />)
@@ -41,7 +35,7 @@ describe('SevenHour', () => {
   })
 
   it.skip('should pass the CONTAINS check', () => {
-    // We tried to use this 'contains' function but couldn't
+    // REASON FOR SKIP: We tried to use this 'contains' function but couldn't
     // figure out how to get it working correctly
     console.log(wrapper.find(Hourly).at(0).containsAnyMatchingElements([<div className="sevenhour-time">11:00 AM</div>]));
     expect(wrapper.find(Hourly).at(0).containsAnyMatchingElements([<div className="sevenhour-time">11:00 AM</div>])).toEqual(true)
@@ -50,5 +44,4 @@ describe('SevenHour', () => {
   it('should give the correct key to the correct hourly component', () => {
     expect(wrapper.find(Hourly).at(0).key()).toEqual('11:00 AM')
   })
-
 })

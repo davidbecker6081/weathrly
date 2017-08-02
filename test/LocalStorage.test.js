@@ -28,14 +28,12 @@ describe('Local Storage', () => {
     expect(wrapper.state().isOnWelcomePage).toEqual(false)
   })
 
-
   it.skip('should set the state correctly when retrieving from local storage', () => {
     wrapper.setState({currentLocation: 'San Francisco, CA'})
     wrapper.instance().saveToLocal()
     wrapper.setState({currentLocation: ''})
-    // this call errors out, because it doesn't know what fetch is
+    // REASON FOR SKIP: this call errors out, because it doesn't know what fetch is
     wrapper.instance().retrieveFromLocal()
-
     expect(wrapper.state().currentLocation).toEqual('San Francisco, CA')
   })
 

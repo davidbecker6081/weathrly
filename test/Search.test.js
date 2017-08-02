@@ -64,7 +64,6 @@ describe('Search', () => {
   it('should massage the input with a valid city and state combo', () => {
     let formattedQuery = wrapper.instance().massageInput('Denver CO')
     expect(formattedQuery).toEqual('co/denver')
-
     formattedQuery = wrapper.instance().massageInput('Denver, CO')
     expect(formattedQuery).toEqual('co/denver')
   })
@@ -73,7 +72,6 @@ describe('Search', () => {
     let formattedQuery = wrapper.instance().massageInput('DenverCO')
     expect(wrapper.instance().props.showErrorPage).toHaveBeenCalled()
     expect(formattedQuery).toEqual('denverco')
-
     formattedQuery = wrapper.instance().massageInput(',Denver, CO')
     expect(wrapper.instance().props.showErrorPage).toHaveBeenCalled()
     expect(formattedQuery).toEqual(',denver, co')
@@ -94,12 +92,9 @@ describe('Search', () => {
   it('should reset the input to empty string on click simulation', () => {
     const searchBtn = wrapper.find('.search-btn')
     const searchInput = wrapper.find('.input-search')
-
     expect(searchBtn.exists()).toEqual(true)
-
     wrapper.setState({currentInput: 'Den'})
     expect(searchInput.props().value).toEqual('Den')
-
     searchBtn.simulate('click')
     expect(wrapper.state().currentInput).toEqual('')
     wrapper.update()
@@ -110,5 +105,4 @@ describe('Search', () => {
     wrapper.setState({currentInput: 'Den'})
     expect(wrapper.find('AutoComplete').find('Suggestion').length).toEqual(2)
   })
-
 })

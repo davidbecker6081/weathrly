@@ -13,11 +13,6 @@ import MockDataSevenHour from '../lib/mock-data-hourly'
 import MockDataTenDay from '../lib/mock-data-tenday'
 import API from '../lib/API'
 
-
-
-// import AutoComplete from '../lib/AutoComplete'
-// import Suggestion from '../lib/Suggestion'
-
 describe('App', () => {
   let wrapper
   let cityListTrie = new Trie()
@@ -51,24 +46,19 @@ describe('App', () => {
     expect(wrapper.instance().isValidLocation).toEqual(false)
   })
 
-
   it('should reset current location', () => {
     wrapper.instance().isValidLocation = false
     wrapper.setState({currentLocation: 'co/denver'})
-
     wrapper.instance().setValidLocation()
-
     expect(wrapper.instance().isValidLocation).toEqual(true)
     expect(wrapper.state().currentLocation).toEqual('')
   })
-
 
   it('should run the componentWillMount', () => {
     wrapper.instance().retrieveFromLocal = jest.fn()
     wrapper.instance().componentWillMount()
     expect(wrapper.instance().retrieveFromLocal).toHaveBeenCalled()
   })
-
 
   it('should display the welcome page when necessary', () => {
     wrapper.setState({isOnWelcomePage: true})
@@ -91,7 +81,6 @@ describe('App', () => {
     expect(wrapper.find(TenDay).exists()).toEqual(false)
   })
 
-
   it('should display the weather when data exists', () => {
     wrapper.setState({isOnWelcomePage: false})
     wrapper.setState({apiData: apiObj})
@@ -99,5 +88,4 @@ describe('App', () => {
     expect(wrapper.find(SevenHour).exists()).toEqual(true)
     expect(wrapper.find(TenDay).exists()).toEqual(true)
   })
-
 })
