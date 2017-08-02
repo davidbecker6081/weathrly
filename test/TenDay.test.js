@@ -1,8 +1,8 @@
 import React from 'react'
-import TenDay from '../lib/TenDay'
-import Daily from '../lib/Daily'
+import TenDay from '../lib/WeatherData/TenDay'
+import Daily from '../lib/WeatherData/Daily'
 import API from '../lib/API'
-import MockDataTenDay from '../lib/mock-data-tenday'
+import MockDataTenDay from '../__mock__/mock-data-tenday'
 import { shallow, mount } from 'enzyme'
 
 describe('TenDay', () => {

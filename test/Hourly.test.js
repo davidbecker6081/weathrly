@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
-import Hourly from '../lib/Hourly'
-import MockDataHourly from '../lib/mock-data-hourly'
+import Hourly from '../lib/WeatherData/Hourly'
+import MockDataHourly from '../__mock__/mock-data-hourly'
 
 describe('Hourly', () => {
   let wrapper

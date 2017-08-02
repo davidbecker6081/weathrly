@@ -1,9 +1,9 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
-import Current from '../lib/Current'
+import Current from '../lib/WeatherData/Current'
 import API from '../lib/API'
-import MockDataCurrent from '../lib/mock-data-current'
-import MockDataForecast from '../lib/mock-data-forecast'
+import MockDataCurrent from '../__mock__/mock-data-current'
+import MockDataForecast from '../__mock__/mock-data-forecast'
 
 describe('Current', () => {
   let wrapper;

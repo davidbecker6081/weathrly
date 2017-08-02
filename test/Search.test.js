@@ -1,10 +1,10 @@
 import React from 'react'
 import Search from '../lib/Search'
-import AutoComplete from '../lib/AutoComplete'
+import AutoComplete from '../lib/AutoComplete/AutoComplete'
 import { shallow, mount } from 'enzyme'
-import CityList from '../lib/CityList'
-import Trie from '../lib/Trie'
-import Suggestion from '../lib/Suggestion'
+import CityList from '../lib/Trie/CityList'
+import Trie from '../lib/Trie/Trie'
+import Suggestion from '../lib/AutoComplete/Suggestion'
 
 describe('Search', () => {
   let wrapper
