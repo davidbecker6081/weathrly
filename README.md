@@ -1,33 +1,21 @@
 # Weathrly
+![ScreenShot of App](__mock__/_ss_.png?raw=true "ScreenShot of App")
 
-WOOO
+## Introduction
 
-To install the dependencies:
+> This application can be used to look up the weather in a US city by using either the zip code or a state/city combo
 
-```
-npm install
-```
+## Built With
 
-To fire up a development server:
+* HTML
+* CSS
+* JavaScript
+* React
+* Jest
+* Enzyme
 
-```
-npm start
-```
+## Team
 
-Once the server is running, you can visit:
+> David Becker
 
-* `http://localhost:8080/webpack-dev-server/` to run your application.
-* `http://localhost:8080/webpack-dev-server/test.html` to run your test suite in the browser.
-
-To build the static files:
-
-```js
-npm run build
-```
-
-
-To run tests in Node:
-
-```js
-npm test
-```
+> Nick Svetnicka
