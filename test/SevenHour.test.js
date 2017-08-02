@@ -28,7 +28,7 @@ describe('SevenHour', () => {
     expect(wrapper.instance().props.apiData.sevenHour.length).toEqual(7)
   })
 
-  it('should render 7 li elements', () => {
+  it('should render 8 li elements', () => {
     expect(wrapper.render().find('li')).toHaveLength(8)
   })
 
@@ -37,10 +37,15 @@ describe('SevenHour', () => {
   })
 
   it('should render the correct first hourly component', () => {
-    console.log(wrapper.debug());
-    expect(wrapper.render().children('.sevenhour-card-container').children('.sevenhour-time').text()).toEqual('11:00 AM')
+    expect(wrapper.render().find('.sevenhour-time').first().text()).toEqual("11:00 AM")
   })
 
+  it('should give the correct key to the correct hourly component', () => {
+    expect(wrapper.find(Hourly).at(0).key()).toEqual('11:00 AM')
+  })
 
+  it.skip('should render hourly components that contain an li element', () => {
+    expect(wrapper.find(Hourly).at(0).containsAnyMatchingElements([<div className="sevenhour-time">11:00 AM</div>])).toEqual(true)
+  })
 
 })
