@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow, mount } from 'enzyme'
-import Daily from '../lib/Daily'
-import MockDataTenDay from '../lib/mock-data-tenday'
+import Daily from '../lib/WeatherData/Daily'
+import MockDataTenDay from '../__mock__/mock-data-tenday'
 
 describe('Daily', () => {
   let wrapper
@@ -47,5 +47,4 @@ describe('Daily', () => {
     expect(image.exists()).toEqual(true)
     expect(image.props().alt).toEqual('partlycloudy')
   })
-
 })

@@ -6,11 +6,8 @@
 }
 
 .suggest-span {
-  /*background-color: #3B8BEB;*/
-  /*border-radius: 3px;*/
   padding: 3px 5px;
   color: rgba(255, 255, 255, 0.7);
-  /*border: 1px solid royalblue;*/
 }
 
 .suggest-span:hover {
