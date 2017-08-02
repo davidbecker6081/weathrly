@@ -28,7 +28,7 @@ describe('SevenHour', () => {
     expect(wrapper.instance().props.apiData.sevenHour.length).toEqual(7)
   })
 
-  it('should render 7 li elements', () => {
+  it('should render 8 li elements', () => {
     expect(wrapper.render().find('li')).toHaveLength(8)
   })
 
@@ -37,7 +37,6 @@ describe('SevenHour', () => {
   })
 
   it('should render the correct first hourly component', () => {
-    //  wrapper.find(Hourly).at(0).render().find('.sevenhour-time').text().toEqual('11:00 AM')
      expect(wrapper.find(Hourly).at(0).render().find('.sevenhour-time').text()).toEqual('11:00 AM')
   })
 
@@ -45,9 +44,11 @@ describe('SevenHour', () => {
     // We tried to use this 'contains' function but couldn't
     // figure out how to get it working correctly
     console.log(wrapper.find(Hourly).at(0).containsAnyMatchingElements([<div className="sevenhour-time">11:00 AM</div>]));
-     expect(wrapper.find(Hourly).at(0).containsAnyMatchingElements([<div className="sevenhour-time">11:00 AM</div>])).toEqual(true)
+    expect(wrapper.find(Hourly).at(0).containsAnyMatchingElements([<div className="sevenhour-time">11:00 AM</div>])).toEqual(true)
   })
 
-
+  it('should give the correct key to the correct hourly component', () => {
+    expect(wrapper.find(Hourly).at(0).key()).toEqual('11:00 AM')
+  })
 
 })
