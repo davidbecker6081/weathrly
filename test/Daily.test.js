@@ -39,7 +39,7 @@ describe('Daily', () => {
   })
 
   it('should have valid rendered text', () => {
-    expect(wrapper.find('.tenday-high-low').find('p').first().text()ß).toEqual('55 F')
+    expect(wrapper.find('.tenday-high-low').find('p').first().text()).toEqual('55 F')
   })
 
   it('should render the correct image', () => {
