@@ -32,6 +32,10 @@ describe('App', () => {
     wrapper = mount(<App />)
   })
 
+  it('should exist', () => {
+    expect(wrapper).toBeDefined()
+  })
+
   it('should result in an error when the location is invalid', () => {
     wrapper.instance().showErrorPage = jest.fn()
     expect(wrapper.instance().isValidLocation).toEqual(true)

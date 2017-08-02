@@ -25,6 +25,10 @@ describe('Search', () => {
                       />)
   })
 
+  it('should exist', () => {
+    expect(wrapper).toBeDefined()
+  })
+
   it('should set the state by calling handleInputChange', () => {
     expect(wrapper.state().currentInput).toEqual('')
     wrapper.instance().handleInputChange({target: {value: 'CA/San_Diego'}})

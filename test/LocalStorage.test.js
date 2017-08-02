@@ -10,6 +10,9 @@ describe('Local Storage', () => {
     wrapper = shallow(<App />)
   })
 
+  it('should exist', () => {
+    expect(wrapper).toBeDefined()
+  })
 
   it('should have local storage mocked up correctly', () => {
     wrapper.setState({currentLocation: 'Denver, CO'})
